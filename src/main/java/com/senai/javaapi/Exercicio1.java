@@ -1,6 +1,7 @@
 package com.senai.javaapi;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -123,6 +124,38 @@ public class Exercicio1 {
 
     for (Funcionario funcionario : funcionarios) {
         System.out.println(funcionario.nome);
+    }
+   }
+
+   void exercicio5()
+   {
+    List<Integer> lista = new ArrayList<Integer>();
+    Scanner sc = new Scanner(System.in);
+
+    System.out.print("Digite o tamanho da lista: ");
+    int N = sc.nextInt();
+
+    for (int i = 0; i < N; i++)
+    {
+        System.out.print("Digite um valor: ");
+        lista.add(sc.nextInt());
+    }
+
+    System.out.println("O maior valor da lista é: " + Collections.max(lista));
+   }
+
+   void exercicio6()
+   {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Digite uma frase: ");
+    String frase = sc.nextLine();
+    
+    String[] palavras = frase.split(" ");
+    
+    if (palavras.length % 2 == 1) {
+        System.out.println("A palavra do meio é: " + palavras[palavras.length / 2]);
+    } else {
+        System.out.println("As palavras do meio são: " + palavras[(palavras.length / 2) - 1] + " " + palavras[palavras.length / 2]);
     }
    }
 }
