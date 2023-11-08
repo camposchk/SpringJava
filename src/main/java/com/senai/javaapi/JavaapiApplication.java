@@ -8,8 +8,7 @@ public class JavaapiApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(JavaapiApplication.class, args);
-		Exercicio1 ex = new Exercicio1();
-		ex.exercicio6();
+		
 	}
 
 }
