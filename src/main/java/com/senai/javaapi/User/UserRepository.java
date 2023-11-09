@@ -1,4 +1,4 @@
-package com.senai.javaapi;
+package com.senai.javaapi.User;
 
 import java.util.List;
 

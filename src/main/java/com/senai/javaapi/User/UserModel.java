@@ -1,4 +1,4 @@
-package com.senai.javaapi;
+package com.senai.javaapi.User;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

@@ -1,4 +1,4 @@
-package com.senai.javaapi;
+package com.senai.javaapi.User;
 
 import java.util.List;
 
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/user")
-public class userController {
+public class UserController {
 
     @Autowired
     private UserService userService;
